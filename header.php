@@ -1,6 +1,9 @@
 <?php
+    include('session.php');
     require_once('db_conn.php');
     include('functions.php');
+
+    check_session();
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -20,7 +20,7 @@
             `last_name` = '$last_name',
             `username` = '$username',
             `email` = '$email',
-            `password` = '$password'";
+            `password` = '".sha1($password)."'";
 
             try {
                 $response = mysqli_query($conn,$sql);

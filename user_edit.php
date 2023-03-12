@@ -26,7 +26,7 @@ $user = $result->fetch_object();
             `email` = '$email',";
 
             if($password != ''){
-                $sql .= "`password` = '$password',";
+                $sql .= "`password` = '".sha1($password)."',";
             }
 
             $sql = rtrim($sql,',');

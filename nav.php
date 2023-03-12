@@ -17,6 +17,9 @@
             <li><a class="dropdown-item" href="user_add.php">Add New</a></li>
           </ul>
         </li>
+        <li class="nav-item">
+            <a href="logout.php" class="nav-link">Logout</a>
+        </li>
       </ul>
     </div>
   </div>
